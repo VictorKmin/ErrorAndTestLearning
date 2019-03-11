@@ -1,5 +1,5 @@
-const dataBase = require('../../../nodeApi/dataBase').getInstance();
-const tokenVerificator = require('../../../nodeApi/helpers/tokenVerificator');
+const dataBase = require('../../dataBase').getInstance();
+const tokenVerificator = require('../../helpers/tokenVerificator');
 const {secret} = require('../../config/secrets');
 
 module.exports = async (req, res) => {

@@ -1,7 +1,12 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+const dovtenv = require('dotenv');
+dovtenv.load();
 
+console.log('ЧИТАЙ README');
+console.log('ЧИТАЙ README');
+console.log('ЧИТАЙ README');
 const dataBase = require('./dataBase').getInstance();
 dataBase.setModels();
 

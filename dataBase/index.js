@@ -1,7 +1,7 @@
 const Sequalize = require('sequelize');
 const fs = require('fs');
 const {resolve} = require('path');
-const {dbName, dbPass, dbUser} = require('../../testLear/constants/dataBase');
+const {dbName, dbPass, dbUser} = require('../constants/dataBase');
 
 module.exports = (() => {
     let instance;
@@ -25,7 +25,9 @@ module.exports = (() => {
 
         return {
             getModel: modelName => models[modelName],
-            setModels: () => getModels()
+            setModels: () => getModels(),
+            // Does it normal ?
+            getConnection: () => client
         };
     }
 

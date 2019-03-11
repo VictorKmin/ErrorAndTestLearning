@@ -1,11 +1,11 @@
-const dataBase = require('../../../nodeApi/dataBase').getInstance();
+const dataBase = require('../../dataBase').getInstance();
 dataBase.setModels();
-const tokinazer = require('../../../nodeApi/helpers/tokinazer');
+const tokinazer = require('../../helpers/tokinazer');
 module.exports = async (req, res) => {
     try {
 
         const UserModel = dataBase.getModel('User');
-        if (!UserModel) res.sendStatus(500);
+        if (!UserModel) res.sendStatus(500).send({message: "NO CONNECT "});
 
         const {email, password} = req.body.userInfo;
 

@@ -19,7 +19,7 @@ describe('LOGIN USER', () => {
             .post('/user/login')
             .send(user)
             .end((err, res) => {
-                res.should.have.status(200)
+                res.should.have.status(200);
                 res.body.should.be.a('object');
                 res.body.should.have.property('message');
                 res.body.message.should.have.property('accessToken');

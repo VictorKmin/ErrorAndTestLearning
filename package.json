@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node app.js",
+    "env": "node env-setup.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +14,9 @@
     "body-parser": "^1.18.3",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
     "mysql2": "^1.6.5",
     "sequelize": "^4.42.0"
   },

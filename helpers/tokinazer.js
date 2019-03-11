@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
-const secretWorld = require('../../testLear/config/secrets').secret;
-const refreshSecret = require('../../testLear/config/secrets').refreshSecret;
+const secretWorld = require('../config/secrets').secret;
+const refreshSecret = require('../config/secrets').refreshSecret;
 
 
 module.exports = (id, email) => {

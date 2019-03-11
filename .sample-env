@@ -1,0 +1,7 @@
+PORT = 3000
+
+DB_NAME = nodeapi
+DB_USER = root
+DB_PASS = groovy
+
+JWT_SECRET = secretWord
