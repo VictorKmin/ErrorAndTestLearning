@@ -18,7 +18,7 @@
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.0",
     "mysql2": "^1.6.5",
-    "sequelize": "^4.42.0"
+    "sequelize": "^5.15.1"
   },
   "devDependencies": {
     "mocha": "^6.0.1"
